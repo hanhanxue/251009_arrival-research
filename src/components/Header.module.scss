@@ -1,0 +1,45 @@
+@use "@/styles/base/variables" as *;
+@use "@/styles/base/typography" as *;
+
+@use "@/styles/abstracts/animation" as *;
+
+.container {
+  div {
+    grid-row: 1;
+    @include subtitle-1;
+    padding: $spacing-4 0;
+
+    &.groupA {
+      grid-column: 1 / 4;
+      display: flex;
+      align-items: center;
+      gap: $spacing-2;
+    }
+    &.groupB {
+      grid-column: 3 / 4;
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+    }
+    &.groupC {
+      grid-column: 4 / 13;
+      display: flex;
+      align-items: center;
+    }
+    &.groupD {
+      grid-column: 9 / 13;
+      display: flex;
+      gap: $spacing-6;
+      justify-content: right;
+    }
+  }
+}
+
+.link {
+  color: var(--c-on-surface-subtle);
+
+  &:hover {
+    color: var(--c-on-surface);
+  }
+  transition: color $duration-standard;
+}

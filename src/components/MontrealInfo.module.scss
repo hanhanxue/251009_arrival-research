@@ -1,0 +1,40 @@
+@use "@/styles/base/typography" as *;
+@use "@/styles/base/variables" as *;
+
+.infoContainer {
+  text-transform: uppercase;
+  @include caption-1;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: $spacing-4;
+
+  margin: $spacing-1 0;
+
+  // Target first span
+  span:nth-child(1) {
+    // styles for first span
+    grid-column: 1 / 4;
+    margin: 0 $spacing-1;
+  }
+
+  // Target second span
+  span:nth-child(2) {
+    // styles for second span
+    grid-column: 4 / 8;
+  }
+
+  // Target third span
+  span:nth-child(3) {
+    // styles for third span
+    grid-column: 8 / 10;
+  }
+
+  // Target third span
+  span:nth-child(4) {
+    // styles for third span
+    grid-column: 10 / 13;
+    justify-self: right;
+    margin: 0 $spacing-1;
+  }
+}

@@ -1,0 +1,4 @@
+// e.g. 16 * .1 = 1.6 * .625rem = 1rem
+@function rem($size: 0px) {
+  @return calc(#{$size * 0.1 * 0.625rem});
+}

@@ -1,0 +1,28 @@
+@use "@/styles/abstracts/animation" as *;
+
+.primary {
+  color: var(--c-on-surface-subtle);
+
+  &:hover {
+    color: var(--c-on-surface);
+  }
+
+  transition: color $duration-standard;
+
+  // span {
+  //     display: flex;
+
+  // }
+}
+
+.secondary {
+  color: var(--c-on-surface);
+}
+
+.isActive {
+  color: var(--c-on-surface);
+}
+
+.debug {
+  color: var(--c-debug);
+}
