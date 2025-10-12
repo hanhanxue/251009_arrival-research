@@ -26,7 +26,7 @@ export default function RootLayout({
               localStorage.plausible_ignore = true;
             }
           `}
-        </Script>{" "}
+        </Script>
         {/* End of disable-plausible */}
         <PlausibleProvider
           domain="research.arrival.works"
