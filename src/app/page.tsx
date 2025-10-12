@@ -14,10 +14,10 @@ export default function Home() {
 
             <div
               className={`${styles.imageContainer}`}
-              style={{ aspectRatio: 1.5 }}
+              style={{ aspectRatio: 2 }}
             >
               <Image
-                src="/works/250918_init.jpg"
+                src="/works/251005_orioCloud_cc.jpg"
                 fill={true}
                 alt=""
                 priority={true}
