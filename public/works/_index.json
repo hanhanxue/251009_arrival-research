@@ -1,0 +1,21 @@
+[
+  {
+    "src": "/works/251104_init.png",
+    "video": false,
+    "videoSrc": "/samples/0265646485e9ca32afb94f85fece66d7.mp4",
+    "aspectRatio": 1.0,
+    "title": "Icon Grid",
+    "tags": ["2D", "rhino", "figma"]
+  },
+  {
+    "src": "/works/251104_screw.png",
+    "video": true,
+    "videoSrc": "/works/screw01.mp4",
+    "aspectRatio": 0.8,
+    "title": "Screws & Bolts Bundle",
+    "tags": ["3D", "houdini", "USD"]
+  }
+
+]
+
+  

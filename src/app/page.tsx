@@ -1,11 +1,22 @@
+"use client"
+
 import Image from "next/image"
 import styles from "./page.module.scss"
 import MontrealInfo from "@/components/MontrealInfo"
+import dynamic from "next/dynamic"
+
+const SMainGrid = dynamic(() => import("@/components/SMainGrid"), {
+  ssr: false
+})
+
 
 export default function Home() {
   return (
     <main>
-      <section className={`${styles.section} usection`}>
+
+
+      <SMainGrid />
+      {/* <section className={`${styles.section} usection`}>
         <div
           className={`${styles.container} ucontainer umx usection-spacing-lg`}
         >
@@ -25,7 +36,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section className={`${styles.section} usection` }> 
             <div className={`${styles.container} ucontainer umx usection-spacing-md`}>
