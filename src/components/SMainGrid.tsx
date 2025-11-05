@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 import styles from "./SMainGrid.module.scss";
 // import works from "/works/_index.json"
@@ -48,12 +48,38 @@ render={MasonryItem} />
 }
 
 const MasonryItem = ({ data, index }: { data: WorkItem; index: number }) => {
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    useEffect(() => {
+        if (data.video && videoRef.current) {
+            const video = videoRef.current;
+            // Set webkit-playsinline for iOS Safari
+            video.setAttribute('webkit-playsinline', 'true');
+            // Ensure video plays on mobile
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(() => {
+                    // Autoplay was prevented, but that's okay
+                    // The video will still be ready to play
+                });
+            }
+        }
+    }, [data.video]);
+
     return (
         <div className={styles.item} key={index}>
 
         <div className={styles.imageContainer} style={{aspectRatio: data.aspectRatio }} key={index}>
           {data.video ? (
-            <video src={data.videoSrc} autoPlay={true} loop={true} muted={true} playsInline={true} />
+            <video 
+              ref={videoRef}
+              src={data.videoSrc} 
+              autoPlay={true} 
+              loop={true} 
+              muted={true} 
+              playsInline={true}
+              preload="auto"
+            />
           ) : (
             <Image src={data.src} fill={true} alt=""  /> 
           )}

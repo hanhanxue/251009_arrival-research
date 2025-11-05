@@ -14,6 +14,14 @@
     "aspectRatio": 0.8,
     "title": "Bolts & Screws Bundle",
     "tags": ["3D", "houdini", "USD"]
+  },
+  {
+    "src": "/works/elasticgrid.mp4",
+    "video": true,
+    "videoSrc": "/works/elasticgrid.mp4",
+    "aspectRatio": 1.7777777777777777,
+    "title": "Elastic Grid",
+    "tags": ["3D", "houdini", "simulation"]
   }
 
 ]
