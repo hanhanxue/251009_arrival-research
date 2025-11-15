@@ -1,29 +1,41 @@
 [
   {
-    "src": "/works/251104_init.png",
-    "video": false,
-    "videoSrc": "/samples/0265646485e9ca32afb94f85fece66d7.mp4",
-    "aspectRatio": 1.0,
-    "title": "Icon Grid",
-    "tags": ["2D", "rhino", "figma"]
+    "src": "/works/251115_curveoffset_output.mp4",
+    "video": true,
+    "videoSrc": "/works/251115_curveoffset_output.mp4",
+    "aspectRatio": 1.5,
+    "title": "Curve Offset",
+    "tags": ["3D", "houdini"],
+    "publish": true
   },
+
+  {
+    "src": "/works/251105_19h43m33s974_Eagle.jpg",
+    "video": false,
+    "videoSrc": "/works/elasticgrid.mp4",
+    "aspectRatio": 1.78,
+    "title": "Wind Tunnel",
+    "tags": ["3D", "houdini", "simulation"],
+    "publish": false
+  },
+
+  {
+    "src": "/works/elasticgrid.mp4",
+    "video": true,
+    "videoSrc": "/works/elasticgrid.mp4",
+    "aspectRatio": 1.78,
+    "title": "Elastic Grid",
+    "tags": ["3D", "houdini", "simulation"],
+    "publish": true
+  },
+
   {
     "src": "/works/251104_screw.png",
     "video": true,
     "videoSrc": "/works/screw01.mp4",
     "aspectRatio": 0.8,
-    "title": "Bolts & Screws Bundle",
-    "tags": ["3D", "houdini", "USD"]
-  },
-  {
-    "src": "/works/elasticgrid.mp4",
-    "video": true,
-    "videoSrc": "/works/elasticgrid.mp4",
-    "aspectRatio": 1.7777777777777777,
-    "title": "Elastic Grid",
-    "tags": ["3D", "houdini", "simulation"]
+    "title": "Bolts & Screws",
+    "tags": ["3D", "houdini", "USD"],
+    "publish": true
   }
-
 ]
-
-  

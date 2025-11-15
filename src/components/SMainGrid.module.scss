@@ -8,6 +8,7 @@
 .container {
 //   display: block !important; // Override the grid system for masonry
 //   width: 100%;
+background-color: gray;
 }
 
 .item {
@@ -18,7 +19,7 @@
 
 .imageContainer {
     position: relative;
-    border-radius: $radius-md;
+    border-radius: $radius-sm;
     overflow: hidden;
 
     video {

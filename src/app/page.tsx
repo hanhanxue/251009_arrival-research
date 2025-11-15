@@ -5,7 +5,7 @@ import styles from "./page.module.scss"
 import MontrealInfo from "@/components/MontrealInfo"
 import dynamic from "next/dynamic"
 
-const SMainGrid = dynamic(() => import("@/components/SMainGrid"), {
+const SMainGridA = dynamic(() => import("@/components/SMainGridA"), {
   ssr: false
 })
 
@@ -15,7 +15,7 @@ export default function Home() {
     <main>
 
 
-      <SMainGrid />
+      <SMainGridA />
       {/* <section className={`${styles.section} usection`}>
         <div
           className={`${styles.container} ucontainer umx usection-spacing-lg`}

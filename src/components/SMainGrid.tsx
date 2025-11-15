@@ -24,7 +24,7 @@ export default function SMainGrid() {
     useEffect(() => {
       fetch("/works/_index.json")
         .then(res => res.json())
-        .then(data => setWorks(data));
+        .then(data => setWorks([...data].reverse()));
     }, []);
 
 
@@ -48,23 +48,7 @@ render={MasonryItem} />
 }
 
 const MasonryItem = ({ data, index }: { data: WorkItem; index: number }) => {
-    const videoRef = useRef<HTMLVideoElement>(null);
 
-    useEffect(() => {
-        if (data.video && videoRef.current) {
-            const video = videoRef.current;
-            // Set webkit-playsinline for iOS Safari
-            video.setAttribute('webkit-playsinline', 'true');
-            // Ensure video plays on mobile
-            const playPromise = video.play();
-            if (playPromise !== undefined) {
-                playPromise.catch(() => {
-                    // Autoplay was prevented, but that's okay
-                    // The video will still be ready to play
-                });
-            }
-        }
-    }, [data.video]);
 
     return (
         <div className={styles.item} key={index}>
@@ -72,7 +56,6 @@ const MasonryItem = ({ data, index }: { data: WorkItem; index: number }) => {
         <div className={styles.imageContainer} style={{aspectRatio: data.aspectRatio }} key={index}>
           {data.video ? (
             <video 
-              ref={videoRef}
               src={data.videoSrc} 
               autoPlay={true} 
               loop={true} 
