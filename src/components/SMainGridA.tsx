@@ -120,7 +120,7 @@ export default function SMainGridA() {
     if (!masonryRef.current || !columnWidth) return;
 
     const m = masonryRef.current!;
-    m.options.columnWidth = columnWidth;
+    m.options!.columnWidth = columnWidth;
     // m.options.transitionDuration = 300;
 
     // m.reloadItems?.();

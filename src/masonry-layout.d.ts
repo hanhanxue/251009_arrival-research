@@ -1,4 +1,4 @@
-declare module 'masonry-layout' {
+declare module "masonry-layout" {
   interface MasonryOptions {
     itemSelector?: string;
     columnWidth?: number | string | Element;
@@ -6,7 +6,10 @@ declare module 'masonry-layout' {
     rowGutter?: number;
     gutter?: number;
     percentPosition?: boolean;
-    [key: string]: any;
+    transitionDuration?: string | number;
+    resize?: boolean;
+    initLayout?: boolean;
+    [key: string]: unknown;
   }
 
   class Masonry {
@@ -14,9 +17,9 @@ declare module 'masonry-layout' {
     layout?(): void;
     reloadItems?(): void;
     destroy?(): void;
-    [key: string]: any;
+    options?: MasonryOptions;
+    [key: string]: unknown;
   }
 
   export default Masonry;
 }
-
