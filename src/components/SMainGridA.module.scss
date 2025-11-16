@@ -32,18 +32,58 @@
   // padding: 12px;
 
   // background-color: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  background-color: rgba(0, 0, 0, 0.32);
-  opacity: 0;
-  transition: opacity 0.3s;
 
   &:hover {
-    opacity: 1;
+    .overlayBackground {
+      opacity: 1;
+    }
+    .overlayContent {
+      opacity: 1;
+    }
   }
-  cursor: pointer;
+
+
+  .overlayContent {
+    // z-index: 150;
+    // background-color: blue;
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+
+    &Center {
+      display: flex;
+      align-items: center;
+      gap: $spacing-2;
+    }
+  }
+
+  .overlayBackground {
+    // z-index: 1;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.32);
+    opacity: 0;
+    transition: opacity 0.3s;
+
+
+  }
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  
+  // background-color: rgba(0, 0, 0, 0.32);
+  // opacity: 0;
+  // transition: opacity 0.3s;
+
+  // &:hover {
+  //   opacity: 1;
+  // }
+  // cursor: pointer;
 }
 
 .download {

@@ -14,7 +14,15 @@ export default function Header() {
       <div className={`${styles.container} ucontainer umx`}>
         <div className={`${styles.groupA}`}>
           {/* <ICO_Arrival /> */}
-          A.R.C.
+       
+          <XLink
+            href="/"
+            target="_blank"
+            rel="noopener"
+            style="secondary"
+          >
+            A.R.C.
+          </XLink>
         </div>
         {/* <div className={`${styles.groupB}`}><ICO_Arrival /></div> */}
         {/* <div className={`${styles.groupC}`}>

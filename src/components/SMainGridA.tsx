@@ -161,11 +161,21 @@ export default function SMainGridA() {
                 )}
 
 <div className={styles.overlaysContainer}>
-                <div className={styles.download}>
-                  <ICO_Download />
-                  Project Files</div>
+<div className={styles.overlayBackground}></div>
+
+                <div className={styles.overlayContent}>
+                  <div className={styles.overlayContentCenter}>
+                        <button className={styles.download}>
+                          <ICO_Download />
+                          Project Files</button>
+                          
+                          </div>
+                </div>
+ 
         
               </div>
+
+
               </div>
               <div className={styles.infoContainer}>
                 <div className={styles.title}>{work.title}</div>
