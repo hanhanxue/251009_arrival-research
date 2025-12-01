@@ -9,7 +9,7 @@ export default function Footer() {
 
                 <p>
                     <span>© {new Date().getFullYear()}</span>
-                    <span>Arrival Research Center</span>
+                    <span>A.R.C. Means Arrival Research Center</span>
                 </p>
                 </div>
 
