@@ -1,0 +1,26 @@
+@use "@/styles/base/typography" as *;
+@use "@/styles/base/variables" as *;
+
+
+
+.groupA {
+    padding: $spacing-4 0;
+
+    @include subtitle-1;
+    grid-column: 1 / 13;
+    grid-row: 1;
+
+    p {
+        display: flex;
+        gap: $spacing-8;
+    }
+
+}
+
+.groupB {
+    @include subtitle-1;
+grid-column: 1 / 13;
+grid-row: 1;
+    // justify-content: right;
+    justify-items: end;
+}

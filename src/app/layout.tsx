@@ -5,6 +5,9 @@ import Header from "@/components/Header"
 import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants"
 import Script from "next/script"
 import PlausibleProvider from "next-plausible"
+import Footer from "@/components/Footer"
+
+
 
 export const metadata: Metadata = {
   title: SITE_NAME,
@@ -36,8 +39,15 @@ export default function RootLayout({
         />
       </head>
       <body data-theme="dark">
+
+
+        
         <Header />
         {children}
+      <Footer />
+
+
+
       </body>
     </html>
   )

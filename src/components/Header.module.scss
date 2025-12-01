@@ -4,7 +4,8 @@
 @use "@/styles/abstracts/animation" as *;
 
 
-.section {position: sticky; top: 0; z-index: 999;
+.section {
+  position: sticky; top: 0; z-index: 999;
 
 // background-color: transparent;
 // mix-blend-mode: difference;
@@ -44,6 +45,7 @@
       display: flex;
       gap: $spacing-6;
       justify-content: right;
+      // justify-items: end;
     }
   }
 }
