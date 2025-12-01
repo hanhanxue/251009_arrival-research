@@ -11,7 +11,6 @@ import styles from "./SMainGridA.module.scss";
 import ICO_Download from "./iconography/ICO_Download";
 import GridItem from "./GridItem";
 
-
 export interface WorkItem {
   hidden: boolean;
   src: string;
@@ -137,13 +136,12 @@ export default function SMainGridA() {
           {/* <div className={`${styles.gridSizer}`} ref={gridSizerRef} />
           <div className={`${styles.gutterSizer}`} ref={gutterSizerRef} /> */}
           {works.map((work, index) => (
-
-            <GridItem columnWidth={columnWidth} work={work} index={index} key={index}/>
-
-
-
-
-        
+            <GridItem
+              columnWidth={columnWidth}
+              work={work}
+              index={works.length - 1 - index}
+              key={index}
+            />
           ))}
         </div>
       </div>
