@@ -2,7 +2,7 @@
 
 // Site Information
 export const SITE_NAME = "Arrival Research Center"
-export const SITE_DESCRIPTION = "A.R.C. means Arrival Research Center. It is the experimental arm of Arrival Works, dedicated to research, experimentation, and the open exchange of knowledge."
+export const SITE_DESCRIPTION = "A.R.C. means Arrival Research Center. It is the experimental arm of Arrival Works, dedicated to research, experimentation, and the open exchange of process knowledge."
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
 

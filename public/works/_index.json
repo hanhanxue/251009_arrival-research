@@ -1,6 +1,68 @@
 [
   {
+    
+    "src": "/works/251130_fran_mat.mp4",
+    "hidden": false,
+    "video": true,
+    "videoSrc": "/works/251130_fran_mat.mp4",
+    "aspectRatio": 1.0,
+    "title": "Vellum Constraints",
+    "tags": ["3D", "houdini", "simulation", "algorithm"],
+    "publish": true
+  },
+  {
+    "src": "/works/dashboard.jpg",
+    "hidden": true,
+    "video": false,
+    "videoSrc": "/works/dashboard.jpg",
+    "aspectRatio": 1.333,
+    "title": "Dashboard",
+    "tags": ["2D", "figma", "simulation", "algorithm"],
+    "publish": true
+  },
+  {
+    "src": "/works/ticket.jpg",
+    "hidden": true,
+    "video": false,
+    "videoSrc": "/works/ticket.jpg",
+    "aspectRatio": 1.0,
+    "title": "Transit",
+    "tags": ["2D", "figma", "simulation", "algorithm"],
+    "publish": true
+  },
+  {
+    "src": "/works/251123_grains.mp4",
+    "hidden": true,
+    "video": true,
+    "videoSrc": "/works/251123_grains.mp4",
+    "aspectRatio": 1.778,
+    "title": "Grains",
+    "tags": ["3D", "houdini", "simulation", "algorithm"],
+    "publish": true
+  },
+  {
+    "src": "/works/251122_coloradvection.mp4",
+    "hidden": true,
+    "video": true,
+    "videoSrc": "/works/251122_coloradvection.mp4",
+    "aspectRatio": 1.0,
+    "title": "Color Advection",
+    "tags": ["3D", "houdini", "simulation", "algorithm"],
+    "publish": true
+  },
+  {
+    "src": "/works/251110_space_colonization.mp4",
+    "hidden": true,
+    "video": true,
+    "videoSrc": "/works/251110_space_colonization.mp4",
+    "aspectRatio": 1.778,
+    "title": "Space Colonization",
+    "tags": ["3D", "houdini", "simulation", "algorithm"],
+    "publish": true
+  },
+  {
     "src": "/works/251115_curveoffset_output.mp4",
+    "hidden": false,
     "video": true,
     "videoSrc": "/works/251115_curveoffset_output.mp4",
     "aspectRatio": 1.5,
@@ -11,9 +73,10 @@
 
   {
     "src": "/works/251105_19h43m33s974_Eagle.jpg",
+    "hidden": false,
     "video": false,
     "videoSrc": "/works/elasticgrid.mp4",
-    "aspectRatio": 1.78,
+    "aspectRatio": 1.778,
     "title": "Wind Tunnel",
     "tags": ["3D", "houdini", "simulation"],
     "publish": false
@@ -21,9 +84,10 @@
 
   {
     "src": "/works/elasticgrid.mp4",
+    "hidden": false,
     "video": true,
     "videoSrc": "/works/elasticgrid.mp4",
-    "aspectRatio": 1.78,
+    "aspectRatio": 1.778,
     "title": "Elastic Grid",
     "tags": ["3D", "houdini", "simulation"],
     "publish": true
@@ -31,6 +95,7 @@
 
   {
     "src": "/works/251104_screw.png",
+    "hidden": true,
     "video": true,
     "videoSrc": "/works/screw01.mp4",
     "aspectRatio": 0.8,

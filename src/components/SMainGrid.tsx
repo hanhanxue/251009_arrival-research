@@ -54,6 +54,8 @@ const MasonryItem = ({ data, index }: { data: WorkItem; index: number }) => {
         <div className={styles.item} key={index}>
 
         <div className={styles.imageContainer} style={{aspectRatio: data.aspectRatio }} key={index}>
+
+
           {data.video ? (
             <video 
               src={data.videoSrc} 
@@ -66,6 +68,8 @@ const MasonryItem = ({ data, index }: { data: WorkItem; index: number }) => {
           ) : (
             <Image src={data.src} fill={true} alt=""  /> 
           )}
+
+          
             </div>
             <div className={styles.infoContainer}>
                 <div className={styles.title}>{data.title}</div>

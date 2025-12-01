@@ -3,7 +3,7 @@
 
 .usection {
   color: var(--c-on-surface);
-  background-color: var(--c-surface-0);
+  background-color: var(--c-surface-bg);
 }
 
 .ucontainer {
@@ -14,7 +14,11 @@
 }
 
 .umx {
-  margin: 0 $spacing-4;
+  margin: 0 $spacing-2-5;
+}
+
+.usection-spacing-sm {
+  padding-top: 16px;
 }
 
 .usection-spacing-md {
@@ -22,7 +26,7 @@
 }
 
 .usection-spacing-lg {
-  padding-top: 128px;
+  padding-top: 48px;
 }
 
 

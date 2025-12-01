@@ -9,8 +9,11 @@ import Masonry from "masonry-layout";
 import Image from "next/image";
 import styles from "./SMainGridA.module.scss";
 import ICO_Download from "./iconography/ICO_Download";
+import GridItem from "./GridItem";
 
-interface WorkItem {
+
+export interface WorkItem {
+  hidden: boolean;
   src: string;
   aspectRatio: number;
   title: string;
@@ -128,60 +131,19 @@ export default function SMainGridA() {
   }, [columnWidth]);
 
   return (
-    <section className={`${styles.section} usection`}>
+    <section className={`${styles.section} usection usection-spacing-lg`}>
       <div className={`${styles.container} umx`} style={{ paddingTop: "12px" }}>
         <div className={styles.grid} ref={gridRef}>
           {/* <div className={`${styles.gridSizer}`} ref={gridSizerRef} />
           <div className={`${styles.gutterSizer}`} ref={gutterSizerRef} /> */}
           {works.map((work, index) => (
-            <div
-              className={styles.gridItem}
-              data-masonry-item
-              key={index}
-              style={{ width: `${columnWidth}px` }}
-            >
 
-  
-              <div
-                className={styles.imageContainer}
-                style={{ aspectRatio: work.aspectRatio }}
-                key={index}
-              >
-                {work.video ? (
-                  <video
-                    src={work.videoSrc}
-                    autoPlay={true}
-                    loop={true}
-                    muted={true}
-                    playsInline={true}
-                    preload="auto"
-                  />
-                ) : (
-                  <Image src={work.src} fill={true} alt="" />
-                )}
+            <GridItem columnWidth={columnWidth} work={work} index={index} key={index}/>
 
-<div className={styles.overlaysContainer}>
-<div className={styles.overlayBackground}></div>
 
-                <div className={styles.overlayContent}>
-                  <div className={styles.overlayContentCenter}>
-                        <button className={styles.download}>
-                          <ICO_Download />
-                          Project Files</button>
-                          
-                          </div>
-                </div>
- 
+
+
         
-              </div>
-
-
-              </div>
-              <div className={styles.infoContainer}>
-                <div className={styles.title}>{work.title}</div>
-                <div className={styles.tags}>{work.tags.join(", ")}</div>
-              </div>
-            </div>
           ))}
         </div>
       </div>

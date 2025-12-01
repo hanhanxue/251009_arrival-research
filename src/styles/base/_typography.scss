@@ -3,8 +3,28 @@
 
 // Font Face Declarations
 @font-face {
-  font-family: "Monument Grotesk";
+  font-family: "ABC Monument Grotesk";
   src: url("/assets/fonts/ABC-Monument-Grotesk-Variable-2.001.woff2")
+    format("woff2-variations");
+  font-weight: 400 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Font Face Declarations
+@font-face {
+  font-family: "ABC Repro";
+  src: url("/assets/fonts/ABC-ReproVariable-Regular.woff2")
+    format("woff2-variations");
+  font-weight: 400 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Font Face Declarations
+@font-face {
+  font-family: "ABC Repro Mono";
+  src: url("/assets/fonts/ABCReproMonoVariable-Regular.woff2")
     format("woff2-variations");
   font-weight: 400 500;
   font-style: normal;
@@ -13,51 +33,19 @@
 
 // Typography Variables
 $font-primary:
-  "Monument Grotesk",
-  -apple-system,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  Roboto,
-  Oxygen,
-  Ubuntu,
-  Cantarell,
+  "ABC Repro",
   sans-serif;
+$font-mono:
+  "ABC Repro Mono",
+  monospace;
 // $font-mono: 'Geist Mono', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
 
-// Font Weight Variables
-$font-weight-thin: 100;
-$font-weight-extralight: 200;
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-medium: 500;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
-$font-weight-extrabold: 800;
-$font-weight-black: 900;
 
-// Font Size Variables
-$font-size-xs: 0.75rem; // 12px
-$font-size-sm: 0.875rem; // 14px
-$font-size-base: 1rem; // 16px
-$font-size-lg: 1.125rem; // 18px
-$font-size-xl: 1.25rem; // 20px
-$font-size-2xl: 1.5rem; // 24px
-$font-size-3xl: 1.875rem; // 30px
-$font-size-4xl: 2.25rem; // 36px
-$font-size-5xl: 3rem; // 48px
-$font-size-6xl: 3.75rem; // 60px
-
-// Line Height Variables
-$line-height-tight: 1.25;
-$line-height-snug: 1.375;
-$line-height-normal: 1.5;
-$line-height-relaxed: 1.625;
-$line-height-loose: 2;
 
 // Typography Mixins
 @mixin display {
   font-family: $font-primary;
-  font-weight: 450;
+  font-weight: 400;
 
   font-size: rem(48);
   line-height: rem(50);
@@ -67,24 +55,15 @@ $line-height-loose: 2;
   @include display;
 }
 
-// Typography Mixins
-@mixin body-1 {
-  font-family: $font-primary;
-  font-weight: 420;
 
-  font-size: rem(14);
-  line-height: rem(20);
-  letter-spacing: -0.01em;
-}
-.body-1 {
-  @include body-1;
-}
 
-// Typography Mixins
+
+
+// SUBTITLE 1 // SUBTITLE 1 // SUBTITLE 1 // SUBTITLE 1 // SUBTITLE 1 // SUBTITLE 1
 @mixin subtitle-1 {
   font-family: $font-primary;
-  font-weight: 420;
-
+  font-weight: 400;
+  
   font-size: rem(21);
   line-height: rem(28);
   letter-spacing: -0.01em;
@@ -97,33 +76,104 @@ $line-height-loose: 2;
 
 
 // Typography Mixins
-@mixin caption-1 {
+@mixin body-1 {
   font-family: $font-primary;
-  font-weight: 420;
+  font-weight: 400;
+
+  font-size: rem(14);
+  line-height: rem(20);
+  letter-spacing: -0.01em;
+}
+.body-1 {
+  @include body-1;
+}
+
+
+@mixin label-1 {
+  font-family: $font-primary;
+  font-weight: 400;
 
   font-size: rem(13);
   line-height: rem(16);
+
+}
+.label-1 {
+  @include label-1;
+}
+
+
+@mixin label-1-strong {
+  @include label-1;
+  font-weight: 500;
+
+}
+.label-1-strong {
+  @include label-1-strong;
+}
+
+
+
+// Typography Mixins
+@mixin caption-1 {
+  font-family: $font-primary;
+  font-weight: 400;
+
+  font-size: rem(12.5);
+  line-height: rem(18);
   letter-spacing: 0.01em;
 }
 .caption-1 {
   @include caption-1;
 }
 
+
+
+
+
+
 // Typography Mixins
-@mixin caption-1-bold {
-  font-family: $font-primary;
-  font-weight: 560;
-
-  font-size: rem(13);
-  line-height: rem(16);
-  letter-spacing: 0.015em;
-}
-.caption-1-bold {
-  @include caption-1-bold;
-}
+// @mixin caption-1-strong {
+//   @include caption-1;
+//   font-weight: 500;
+// }
+// .caption-1-strong {
+//   @include caption-1-strong;
+// }
 
 
 
+
+
+
+// Font Weight Variables
+// $font-weight-thin: 100;
+// $font-weight-extralight: 200;
+// $font-weight-light: 300;
+// $font-weight-normal: 400;
+// $font-weight-medium: 500;
+// $font-weight-semibold: 600;
+// $font-weight-bold: 700;
+// $font-weight-extrabold: 800;
+// $font-weight-black: 900;
+
+// Font Size Variables
+// $font-size-xs: 0.75rem; // 12px
+// $font-size-sm: 0.875rem; // 14px
+// $font-size-base: 1rem; // 16px
+// $font-size-lg: 1.125rem; // 18px
+// $font-size-xl: 1.25rem; // 20px
+// $font-size-2xl: 1.5rem; // 24px
+// $font-size-3xl: 1.875rem; // 30px
+// $font-size-4xl: 2.25rem; // 36px
+// $font-size-5xl: 3rem; // 48px
+// $font-size-6xl: 3.75rem; // 60px
+
+// Line Height Variables
+// $line-height-tight: 1.25;
+// $line-height-snug: 1.375;
+// $line-height-normal: 1.5;
+// $line-height-relaxed: 1.625;
+// $line-height-loose: 2;
 
 
 // @mixin heading-2 {

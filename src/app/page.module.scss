@@ -19,8 +19,17 @@
 }
 
 .description {
-  grid-column: 1 / 13;
-  @include display;
+
+  padding: $spacing-12 0 $spacing-8;
+  p {
+    grid-column: 1 / 13;
+    max-width: 480px;
+  }
+
+
+  // max-width: 480px;
+  @include body-1; 
+  color: var(--c-on-surface-subtle);
 }
 
 // .page {

@@ -4,6 +4,7 @@ import styles from "./Header.module.scss"
 
 import ICO_Arrival from "./iconography/ICO_Arrival"
 import XLink from "./XLink"
+import UIButton from "./UIButton"
 
 export default function Header() {
   return (
@@ -12,7 +13,7 @@ export default function Header() {
     ${styles.section} usection`}
     >
       <div className={`${styles.container} ucontainer umx`}>
-        <div className={`${styles.groupA}`}>
+        <div className={`${styles.groupA} ${styles.groups}`}>
           {/* <ICO_Arrival /> */}
        
           <XLink
@@ -23,12 +24,17 @@ export default function Header() {
           >
             A.R.C.
           </XLink>
+
+
+<UIButton>Request</UIButton>
+
+
         </div>
         {/* <div className={`${styles.groupB}`}><ICO_Arrival /></div> */}
         {/* <div className={`${styles.groupC}`}>
           Creative office for advanced industry
         </div> */}
-        <div className={`${styles.groupD}`}>
+        <div className={`${styles.groupD} ${styles.groups}`}>
           <XLink
             href="https://www.arrival.works/"
             target="_blank"

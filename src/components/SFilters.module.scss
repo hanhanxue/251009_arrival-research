@@ -1,0 +1,85 @@
+@use "@/styles/base/variables" as *;
+@use "@/styles/base/typography" as *;
+
+.container {
+
+}
+
+.filterTitle {
+  padding-bottom: $spacing-2;
+  color: var(--c-on-surface-secondary);
+  @include label-1;
+}
+
+.domains {
+  grid-column: span 2;
+}
+
+.categories {
+  grid-column: span 2;
+}
+
+.tags {
+  grid-column: span 2;
+}
+
+.software {
+  grid-column: span 2;
+}
+
+.settings {
+  grid-column: 9 / 13;
+  justify-items: right;
+  justify-self: right;
+  // justify-content: right;
+  // background-color: var(--c-debug);
+}
+
+.filterList {
+  display: inline-grid;
+//   column-gap: $spacing-4;
+  grid-template-columns: max-content max-content;
+  // grid-template-columns: 1fr 1fr;
+  // grid-auto-rows: auto;
+
+  li {
+    display: contents;
+    .name {
+        // grid-column: 1;
+        padding-right: $spacing-4;
+    }
+    .indicator {
+        // grid-column: 2;
+    }
+  }
+}
+
+
+
+.filterItem {
+ user-select: none;
+  @include label-1;
+  color: var(--c-on-surface-subtle);
+  // display: flex;
+  // // justify-content: space-between;
+  // // align-items: center;
+  // gap: 16px;
+  cursor: pointer;
+
+  .indicator span{
+    display: inline-flex;
+    justify-content: center;
+
+    width: 16px;
+    // background-color: var(--c-debug);
+  }
+
+  &.active {
+    .indicator span{
+
+      color: var(--c-on-surface-secondary);
+
+    }
+
+  }
+}

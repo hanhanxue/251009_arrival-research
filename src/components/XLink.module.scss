@@ -1,7 +1,7 @@
 @use "@/styles/abstracts/animation" as *;
 
 .primary {
-  color: var(--c-on-surface-subtle);
+  color: var(--c-on-surface-secondary);
 
   &:hover {
     color: var(--c-on-surface);

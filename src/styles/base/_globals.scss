@@ -16,16 +16,16 @@ body {
   -webkit-font-smoothing: antialiased;
   // color: var(--c-debug);
   // background-color: var(--c-debug);
-  background-color: var(--c-surface-0);
+  background-color: var(--c-surface-bg);
 
   // SELECTION COLORS
   //   ::-moz-selection { /* Code for Firefox */
-  //   color: var(--c-surface-0);
+  //   color: var(--c-surface-bg);
   //   background: var(--c-on-surface);
   // }
 
   ::selection {
-    color: var(--c-surface-0);
+    color: var(--c-surface-bg);
     background: var(--c-on-surface);
   }
 }
@@ -69,6 +69,8 @@ input {
 sup {
   position: relative;
   margin-left: 0.1em;
-  top: -0.05em;
-  // top: -0.1em;
+  // ABC Repro font has a higher baseline than ABC Monument Grotesk
+  top: 0.1em;
+  
+  // top: -0.05em;
 }
