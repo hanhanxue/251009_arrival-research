@@ -1,6 +1,17 @@
 [
   {
     
+    "src": "/works/251201_forwardInfection.mp4",
+    "hidden": false,
+    "video": true,
+    "videoSrc": "/works/251201_forwardInfection.mp4",
+    "aspectRatio": 1.0,
+    "title": "Forward Infection",
+    "tags": ["3D", "houdini", "simulation", "algorithm"],
+    "publish": true
+  },
+  {
+    
     "src": "/works/251130_fran_mat.mp4",
     "hidden": false,
     "video": true,
